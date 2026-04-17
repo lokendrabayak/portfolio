@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Visual Storyteller — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-bar"></div>
+      <span class="loader-text">Lokendra Bayak</span>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div id="scroll-progress"></div>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Lokendra Bayak<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon">☀</span>
+        </button>
+        <button class="nav-cta" onclick="scrollToSection('contact')">Hire Me</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#portfolio" class="mobile-link">Work</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#blog" class="mobile-link">Blog</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">Available for Freelance</div>
+      <h1 class="hero-title reveal">
+        Creative<br>
+        <em>Visual</em><br>
+        <span id="typewriter"></span>
+      </h1>
+      <p class="hero-sub reveal">Video Editor · Photographer · Model · Vlogger · Graphic Designer</p>
+      <div class="hero-btns reveal">
+        <button class="btn-primary" onclick="scrollToSection('portfolio')">View Portfolio</button>
+        <button class="btn-outline" onclick="scrollToSection('contact')">Contact Me</button>
+      </div>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <span class="stat-num" data-count="150">0</span><span>+</span>
+        <p>Projects</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="80">0</span><span>+</span>
+        <p>Clients</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="5">0</span><span>+</span>
+        <p>Years Exp</p>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap reveal-left">
+          <div class="about-image-frame">
+            <div class="about-image-placeholder">
+              <div class="image-initials">CVS</div>
+              <div class="image-overlay-text">Creative Visual Storyteller</div>
+            </div>
+          </div>
+          <div class="about-badge">
+            <span>✦</span> Open to Work
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <div class="section-tag">About Me</div>
+          <h2 class="section-title">Crafting Stories<br>Through <em>Visuals</em></h2>
+          <p class="about-bio">I'm a multidisciplinary creative professional with a passion for visual storytelling. From cinematic video edits to stunning photography, I bring ideas to life with precision and artistry. Every frame, every pixel, every cut — crafted with intention.</p>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Video Editing</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Photography</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Graphic Design</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Content Creation</span>
+                <span>92%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Portfolio</div>
+        <h2 class="section-title">Selected <em>Work</em></h2>
+        <p class="section-sub">A curated collection of projects across disciplines</p>
+      </div>
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="video">Video Editing</button>
+        <button class="filter-btn" data-filter="photo">Photography</button>
+        <button class="filter-btn" data-filter="model">Modeling</button>
+        <button class="filter-btn" data-filter="design">Graphic Design</button>
+        <button class="filter-btn" data-filter="vlog">Vlogs</button>
+      </div>
+      <div class="portfolio-grid" id="portfolio-grid">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" id="lightbox-close">✕</button>
+    <div class="lightbox-content" id="lightbox-content"></div>
+  </div>
+
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Services</div>
+        <h2 class="section-title">What I <em>Offer</em></h2>
+        <p class="section-sub">Professional creative services tailored to your vision</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">🎬</div>
+          <h3>Video Editing</h3>
+          <p>YouTube videos, Instagram Reels, brand ads, and cinematic short films — edited with precision and storytelling in mind.</p>
+          <div class="service-tags">
+            <span>YouTube</span><span>Reels</span><span>Ads</span>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">📸</div>
+          <h3>Photography</h3>
+          <p>Portrait, fashion, events, and editorial photography with expert composition and natural light mastery.</p>
+          <div class="service-tags">
+            <span>Portrait</span><span>Events</span><span>Fashion</span>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">✏️</div>
+          <h3>Graphic Design</h3>
+          <p>Posters, thumbnails, brand identities, and social media graphics that communicate with clarity and style.</p>
+          <div class="service-tags">
+            <span>Branding</span><span>Thumbnails</span><span>Posters</span>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🎙️</div>
+          <h3>Vlog Editing</h3>
+          <p>Engaging vlog edits with snappy cuts, color grading, sound design, and on-screen effects that hold attention.</p>
+          <div class="service-tags">
+            <span>Color Grade</span><span>Sound</span><span>Effects</span>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">📱</div>
+          <h3>Social Media</h3>
+          <p>Full-service social media management including content planning, creation, scheduling, and growth strategy.</p>
+          <div class="service-tags">
+            <span>Instagram</span><span>TikTok</span><span>YouTube</span>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">👗</div>
+          <h3>Modeling</h3>
+          <p>Fashion, editorial, and commercial modeling with a natural presence and ability to bring a brand's vision to life.</p>
+          <div class="service-tags">
+            <span>Fashion</span><span>Editorial</span><span>Commercial</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS SECTION -->
+  <section id="tools">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Toolkit</div>
+        <h2 class="section-title">Tools of the <em>Trade</em></h2>
+      </div>
+      <div class="tools-grid reveal">
+        <div class="tool-item"><div class="tool-icon">Pr</div><span>Premiere Pro</span></div>
+        <div class="tool-item"><div class="tool-icon">Ps</div><span>Photoshop</span></div>
+        <div class="tool-item"><div class="tool-icon">Ae</div><span>After Effects</span></div>
+        <div class="tool-item"><div class="tool-icon">Lr</div><span>Lightroom</span></div>
+        <div class="tool-item"><div class="tool-icon">Ai</div><span>Illustrator</span></div>
+        <div class="tool-item"><div class="tool-icon">Da</div><span>DaVinci Resolve</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG SECTION -->
+  <section id="blog">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Blog</div>
+        <h2 class="section-title">Thoughts &amp; <em>Insights</em></h2>
+        <p class="section-sub">Tips, techniques, and stories from behind the lens</p>
+      </div>
+      <div class="blog-grid" id="blog-grid">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG MODAL -->
+  <div id="blog-modal" class="blog-modal">
+    <div class="blog-modal-inner">
+      <button class="modal-close" id="modal-close">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Testimonials</div>
+        <h2 class="section-title">Client <em>Stories</em></h2>
+      </div>
+      <div class="testimonials-wrapper reveal">
+        <div class="testimonials-track" id="testimonials-track">
+          <!-- Injected by JS -->
+        </div>
+        <div class="testimonial-dots" id="testimonial-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="section-tag">Contact</div>
+          <h2 class="section-title">Let's Create<br><em>Together</em></h2>
+          <p>Have a project in mind? Let's talk about it. I'm available for freelance work, collaborations, and full-time creative roles.</p>
+          <div class="contact-socials">
+            <a href="#" class="social-link" aria-label="YouTube">
+              <span class="social-icon">▶</span> YouTube
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <span class="social-icon">◈</span> Instagram
+            </a>
+            <a href="#" class="social-link" aria-label="TikTok">
+              <span class="social-icon">♪</span> TikTok
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <span class="social-icon">ƒ</span> Facebook
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <div class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Jane Smith" />
+              <span class="field-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="jane@example.com" />
+              <span class="field-error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+              <span class="field-error" id="message-error"></span>
+            </div>
+            <button class="btn-primary submit-btn" id="submit-btn" onclick="submitForm()">
+              <span id="btn-text">Send Message</span>
+              <span id="btn-loader" style="display:none">Sending...</span>
+            </button>
+          </div>
+          <div class="success-message" id="success-message">
+            <div class="success-icon">✓</div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="nav-logo">Lokendra Bayak<span>.</span></span>
+          <p>Videographer & VideoEditor</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#portfolio">Work</a>
+          <a href="#services">Services</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-copy">
+          &copy; 2025 Lokendra Bayak. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
